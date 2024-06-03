@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div id="menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="date-time"></div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <img id="search-icon" src="magnifying.png" alt="Search Icon">
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li id="home-button" onclick="goToHome()">Home</li>
+            <li id="Dashboard-button" onclick="goToDashboard()">Dashboard</li>
+            <li>Settings</li>
+            <li class="bottom">About</li>
+        </ul>
+    </div>
+
+    <!-- Blog Posts -->
+    <div id="blog-posts">
+        <!-- Blog posts will be inserted here -->
+    </div>
+
+    <!-- Floating Button -->
+    <button id="floating-button" onclick="window.location.href='create.html'">+</button>
+
+    <script src="Dashboard.js"></script>
+</body>
+</html>

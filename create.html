@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Blog Post</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div id="menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="date-time"></div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <img id="search-icon" src="magnifying.png" alt="Search Icon">
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li id="home-button" onclick="goToHome()">Home</li>
+            <li id="Dashboard-button" onclick="goToDashboard()">Dashboard</li>
+            <li>Settings</li>
+            <li class="bottom">About</li>
+        </ul>
+    </div>
+
+    <!-- Create Form -->
+    <div id="form-container">  <!-- Add this new div -->
+        <form id="create-form">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" required></textarea><br>
+            <label for="attachments">Attachments:</label><br>
+            <input type="file" id="attachments" name="attachments" multiple accept="image/*,video/*"><br>
+            <input type="submit" value="Save">
+        </form>
+    </div>  <!-- Close the new div -->
+
+    <script src="create.js"></script>
+</body>
+</html>
